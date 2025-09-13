@@ -1,0 +1,115 @@
+/* Reset mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ffeaea;
+  color: #d35400;
+  text-align: center;
+}
+
+/* Navbar */
+header {
+  background: linear-gradient(to right, #ffb6b9, #ffdac1);
+  padding: 15px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Hero section */
+.hero {
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #e67e22;
+}
+
+.hero p {
+  margin: 10px 0 20px;
+}
+
+.hero img {
+  max-width: 700px;
+  margin: 20px auto;
+  display: block;
+}
+
+.hero button {
+  background: #ff7f50;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Info section */
+.info {
+  display: flex;
+  justify-content: space-around;
+  background: #fff3f3;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.info div {
+  width: 40%;
+  min-width: 280px;
+}
+
+.info h2 {
+  margin-bottom: 15px;
+  color: #e67e22;
+}
+
+.info p, .info li {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Order section */
+.order {
+  background: #ffe4e1;
+  padding: 40px 20px;
+}
+
+.order h2 {
+  color: #e67e22;
+  margin-bottom: 15px;
+}
+
+.order button {
+  background: #ff7f50;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #ffb6b9;
+  color: white;
+  padding: 15px 0;
+  margin-top: 20px;
+}
