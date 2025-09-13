@@ -23,6 +23,7 @@ nav ul {
   justify-content: center;
   gap: 30px;
   list-style: none;
+  flex-wrap: wrap; /* tránh tràn trên mobile */
 }
 
 nav a {
@@ -46,7 +47,8 @@ nav a {
 }
 
 .hero img {
-  max-width: 700px;
+  max-width: 50%;   /* chỉ hiển thị bằng 1/2 so với trước */
+  height: auto;     /* vẫn giữ đúng tỉ lệ */
   margin: 20px auto;
   display: block;
 }
@@ -68,11 +70,12 @@ nav a {
   background: #fff3f3;
   padding: 40px 20px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .info div {
-  width: 40%;
-  min-width: 280px;
+  flex: 1 1 300px; /* Linh hoạt: tối thiểu 300px */
+  max-width: 500px;
 }
 
 .info h2 {
@@ -112,4 +115,44 @@ footer {
   color: white;
   padding: 15px 0;
   margin-top: 20px;
+}
+
+/* ========== Responsive ========== */
+
+/* Tablet và mobile */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8em;
+  }
+
+  .hero img {
+    max-width: 90%;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info div {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+/* Điện thoại nhỏ */
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .hero button, .order button {
+    width: 80%;
+    max-width: 250px;
+  }
 }
