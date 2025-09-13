@@ -120,9 +120,9 @@ footer {
 /* ========== Responsive ========== */
 
 /* Tablet và mobile */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 1.8em;
+@media (max-width: 480px) {
+  .hero img {
+    max-width: 70%; /* bé hơn nhưng không quá nhỏ */
   }
 
   .hero img {
