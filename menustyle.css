@@ -1,0 +1,210 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ffeaea;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background: linear-gradient(to right, #ffb6b9, #ffdac1);
+  padding: 15px 0;
+}
+
+nav {
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  flex-wrap: wrap; /* tránh tràn trên mobile */
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Giỏ hàng */
+.cart {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cart span {
+  background: #ff7f50;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 14px;
+  margin-left: 5px;
+  color: #fff;
+}
+
+/* Fix header trên màn hình nhỏ */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    flex: 1;                     /* menu co lại, tránh bị icon đè */
+    justify-content: center;     /* giữ menu ở giữa */
+  }
+
+  .cart {
+    margin-left: auto;           /* đẩy icon giỏ hàng sang phải */
+    white-space: nowrap;         /* tránh icon bị rớt dòng */
+  }
+}
+
+.menu-section {
+  margin: 20px auto;
+  max-width: 750px;
+  padding: 15px;
+}
+
+.menu-section h2 {
+  color: #e85c2b;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.menu-section h1 {
+  color:#e85c2b;
+}
+
+.menu-section p {
+  font-weight: bold;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 12px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px dotted #ddd;
+}
+
+.menu-with-images {
+  display: flex;
+  align-items: stretch; /* để ảnh cao bằng menu */
+}
+
+.menu-content {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.side-img {
+  width: 100px;      /* chỉnh độ rộng ảnh */
+  object-fit: cover; /* giữ tỉ lệ */
+}
+
+.side-img.left {
+  margin-right: 10px;
+}
+
+.side-img.right {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-with-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-img {
+    width: 60%;
+    height: auto;
+    margin: 10px 0;
+  }
+}
+
+.item-left {
+  flex: 1;
+}
+
+.item-name {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+}
+
+.item-left small {
+  font-size: 12px;
+  color: #666;
+  display: block;
+  margin-top: 2px;
+}
+
+.item-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+  min-width: 70px;
+  text-align: right;
+}
+
+/* Nút Thêm vào giỏ */
+.order-btn {
+  background-color: #ff7f50;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #e5673f;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #ffb6b9;
+  color: #444;
+  font-size: 13px;
+}
+
+/* Footer */
+footer {
+  background: #ffb6b9;
+  color: white;
+  padding: 15px 0;
+  margin-top: 20px;
+}
