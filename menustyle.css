@@ -57,6 +57,25 @@ nav a {
   color: #fff;
 }
 
+/* Fix header trên màn hình nhỏ */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    flex: 1;                     /* menu co lại, tránh bị icon đè */
+    justify-content: center;     /* giữ menu ở giữa */
+  }
+
+  .cart {
+    margin-left: auto;           /* đẩy icon giỏ hàng sang phải */
+    white-space: nowrap;         /* tránh icon bị rớt dòng */
+  }
+}
+
 .menu-section {
   margin: 20px auto;
   max-width: 750px;
@@ -189,3 +208,4 @@ footer {
   padding: 15px 0;
   margin-top: 20px;
 }
+
