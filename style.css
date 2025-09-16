@@ -92,6 +92,20 @@ nav a {
   }
 }
 
+.hero-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;   /* ép luôn 1 hàng */
+  overflow-x: auto;    /* nếu màn nhỏ thì kéo ngang */
+}
+
+.hero-images img {
+  max-width: 200px;   /* chỉnh kích thước cho vừa điện thoại */
+  height: auto;
+}
+
 /* Info section */
 .info {
   display: flex;
@@ -184,3 +198,4 @@ footer {
     max-width: 250px;
   }
 }
+
